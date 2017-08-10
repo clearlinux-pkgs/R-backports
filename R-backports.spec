@@ -4,7 +4,7 @@
 #
 Name     : R-backports
 Version  : 1.1.0
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/backports_1.1.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/backports_1.1.0.tar.gz
 Summary  : Reimplementations of Functions Introduced Since R-3.0.0
@@ -13,7 +13,11 @@ License  : GPL-2.0
 BuildRequires : clr-R-helpers
 
 %description
-No detailed description available
+R since version 3.0.0. The backports are conditionally exported which
+    results in R resolving the function names to the version shipped with R (if
+    available) and uses the implemented backports as fallback. This way package
+    developers can make use of the new functions without worrying about the
+    minimum required R version.
 
 %prep
 %setup -q -c -n backports
@@ -23,11 +27,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1496603971
+export SOURCE_DATE_EPOCH=1502396548
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1496603971
+export SOURCE_DATE_EPOCH=1502396548
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
