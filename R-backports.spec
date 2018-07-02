@@ -4,7 +4,7 @@
 #
 Name     : R-backports
 Version  : 1.1.2
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/backports_1.1.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/backports_1.1.2.tar.gz
 Summary  : Reimplementations of Functions Introduced Since R-3.0.0
