@@ -4,7 +4,7 @@
 #
 Name     : R-backports
 Version  : 1.1.3
-Release  : 31
+Release  : 32
 URL      : https://cran.r-project.org/src/contrib/backports_1.1.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/backports_1.1.3.tar.gz
 Summary  : Reimplementations of Functions Introduced Since R-3.0.0
@@ -37,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1549272342
+export SOURCE_DATE_EPOCH=1552712295
 
 %install
-export SOURCE_DATE_EPOCH=1549272342
+export SOURCE_DATE_EPOCH=1552712295
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -76,8 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library backports|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  backports || :
 
 
 %files
@@ -102,10 +101,27 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/backports/help/paths.rds
 /usr/lib64/R/library/backports/html/00Index.html
 /usr/lib64/R/library/backports/html/R.css
-/usr/lib64/R/library/backports/libs/symbols.rds
+/usr/lib64/R/library/backports/tests/helper/helper.R
+/usr/lib64/R/library/backports/tests/test_URLencode.R
+/usr/lib64/R/library/backports/tests/test_anyNA.R
+/usr/lib64/R/library/backports/tests/test_capture.output.R
+/usr/lib64/R/library/backports/tests/test_dir.exists.R
+/usr/lib64/R/library/backports/tests/test_dotsElt.R
+/usr/lib64/R/library/backports/tests/test_dotsLength.R
+/usr/lib64/R/library/backports/tests/test_file.info.R
+/usr/lib64/R/library/backports/tests/test_file.mode.R
+/usr/lib64/R/library/backports/tests/test_file.mtime.R
+/usr/lib64/R/library/backports/tests/test_file.size.R
+/usr/lib64/R/library/backports/tests/test_get0.R
+/usr/lib64/R/library/backports/tests/test_hasName.R
+/usr/lib64/R/library/backports/tests/test_isFALSE.R
+/usr/lib64/R/library/backports/tests/test_lengths.R
+/usr/lib64/R/library/backports/tests/test_startsWith.R
+/usr/lib64/R/library/backports/tests/test_strrep.R
+/usr/lib64/R/library/backports/tests/test_trimws.R
+/usr/lib64/R/library/backports/tests/test_valid.factor.R
+/usr/lib64/R/library/backports/tests/test_warningCondition.R
 
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/backports/libs/backports.so
-/usr/lib64/R/library/backports/libs/backports.so.avx2
-/usr/lib64/R/library/backports/libs/backports.so.avx512
