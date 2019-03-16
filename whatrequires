@@ -1,4 +1,6 @@
 # This file contains recursive sources that require this package
+R-BB
+R-BBmisc
 R-brms
 R-checkmate
 R-rprojroot
