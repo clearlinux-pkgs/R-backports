@@ -1,7 +1,16 @@
 # This file contains recursive sources that require this package
 R-BB
 R-BBmisc
+R-DBI
 R-brms
 R-checkmate
-R-rprojroot
+R-desc
+R-fail
+R-here
+R-htmlTable
+R-modelr
+R-pkgload
+R-pxweb
+R-rcmdcheck
+R-rjstat
 R-styler
