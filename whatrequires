@@ -1,22 +1,11 @@
 # This file contains recursive sources that require this package
 R-BB
-R-BBmisc
+R-BatchJobs
 R-DBI
-R-RSQLite
-R-RcmdrMisc
 R-brms
+R-broom
 R-checkmate
-R-desc
-R-devtools
-R-fail
-R-haplo.stats
-R-here
-R-htmlTable
-R-modelr
-R-pkgload
-R-pxweb
 R-rcmdcheck
-R-rhub
-R-rjstat
 R-rprojroot
 R-styler
+R-vctrs
