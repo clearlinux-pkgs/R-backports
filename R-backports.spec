@@ -4,7 +4,7 @@
 #
 Name     : R-backports
 Version  : 1.1.5
-Release  : 43
+Release  : 44
 URL      : https://cran.r-project.org/src/contrib/backports_1.1.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/backports_1.1.5.tar.gz
 Summary  : Reimplementations of Functions Introduced Since R-3.0.0
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
 Requires: R-backports-lib = %{version}-%{release}
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 Functions introduced or changed since R v3.0.0 are re-implemented in this
@@ -37,10 +38,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1570062301
+export SOURCE_DATE_EPOCH=1571796992
 
 %install
-export SOURCE_DATE_EPOCH=1570062301
+export SOURCE_DATE_EPOCH=1571796992
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

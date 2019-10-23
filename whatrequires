@@ -1,5 +1,4 @@
 # This file contains recursive sources that require this package
-R-BB
 R-BatchJobs
 R-DBI
 R-brms
