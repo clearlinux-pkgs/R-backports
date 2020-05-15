@@ -4,7 +4,7 @@
 #
 Name     : R-backports
 Version  : 1.1.7
-Release  : 49
+Release  : 50
 URL      : https://cran.r-project.org/src/contrib/backports_1.1.7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/backports_1.1.7.tar.gz
 Summary  : Reimplementations of Functions Introduced Since R-3.0.0
@@ -38,10 +38,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1589423606
+export SOURCE_DATE_EPOCH=1589508670
 
 %install
-export SOURCE_DATE_EPOCH=1589423606
+export SOURCE_DATE_EPOCH=1589508670
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
