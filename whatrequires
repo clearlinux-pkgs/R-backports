@@ -1,9 +1,7 @@
 # This file contains recursive sources that require this package
-R-BB
 R-BatchJobs
 R-brms
 R-broom
 R-checkmate
-R-rcmdcheck
 R-rprojroot
 R-styler
