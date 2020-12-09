@@ -1,7 +1,7 @@
 # This file contains recursive sources that require this package
 R-BatchJobs
+R-MatchIt
 R-brms
 R-broom
 R-checkmate
-R-rprojroot
 R-styler
