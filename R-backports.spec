@@ -4,7 +4,7 @@
 #
 Name     : R-backports
 Version  : 1.4.1
-Release  : 70
+Release  : 71
 URL      : https://cran.r-project.org/src/contrib/backports_1.4.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/backports_1.4.1.tar.gz
 Summary  : Reimplementations of Functions Introduced Since R-3.0.0
@@ -38,10 +38,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1639421927
+export SOURCE_DATE_EPOCH=1640972348
 
 %install
-export SOURCE_DATE_EPOCH=1639421927
+export SOURCE_DATE_EPOCH=1640972348
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -140,3 +140,5 @@ R CMD check --no-manual --no-examples --no-codoc backports || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/backports/libs/backports.so
+/usr/lib64/R/library/backports/libs/backports.so.avx2
+/usr/lib64/R/library/backports/libs/backports.so.avx512
