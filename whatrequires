@@ -4,9 +4,10 @@ R-MatchIt
 R-ParamHelpers
 R-base64url
 R-batchtools
+R-bibtex
 R-brms
 R-broom
 R-checkmate
+R-lintr
 R-mlr
-R-styler
 R-tfautograph
